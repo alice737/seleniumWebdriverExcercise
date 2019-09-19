@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parametrized Suite" >
+    <test name="Parametrized Test 1">
+        <parameter name="queryToSearch" value="TestNG" />
+        <classes>
+            <class name="ParametersFromTestNgXmlTests"/>
+        </classes>
+    </test>
+</suite>
