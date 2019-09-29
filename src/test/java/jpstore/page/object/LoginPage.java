@@ -34,12 +34,14 @@ public class LoginPage {
 
     public void markUsername(String username) {
         WaitForElement.waitUntilElementIsVisible(usernameField);
+        usernameField.clear();
         usernameField.sendKeys(username);
         logger.info("Typed into User Name Field {}", username);
 
     }
 
     public void markPassword(String password) {
+        passwordField.clear();
         passwordField.sendKeys(password);
     }
 

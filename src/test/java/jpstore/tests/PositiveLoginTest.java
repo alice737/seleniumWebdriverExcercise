@@ -15,11 +15,6 @@ public class PositiveLoginTest  extends  BaseTest{
     public void asUserLoginUsingValidLoginAndPassword() {
         DriverUtils.navigateToPage(LOGIN_URL);
 
-//        LandingPage landingPage = new LandingPage();
-//        landingPage.clickEnterStore();
-//        TopMenuPage topMenuPage = new TopMenuPage();
-//        topMenuPage.goToSingInForm();
-
         LoginPage loginPage = new LoginPage();
         loginPage.markUsername("j2ee");
         loginPage.markPassword("j2ee");

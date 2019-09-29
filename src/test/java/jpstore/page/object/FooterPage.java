@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class FooterPage {
-    @FindBy(css= "#Banner img[src*='dog']")
+    @FindBy(css="#Banner > img")
     WebElement bannerAfterLogIn;
 
     public FooterPage() {
@@ -15,8 +15,7 @@ public class FooterPage {
     }
 
     public Boolean getIsDisplayedBanner(){
-       //WaitForElement.waitUntilElementIsVisible(bannerAfterLogIn);
-       // return bannerAfterLogIn.isDisplayed();
-        return true;
+       WaitForElement.waitUntilElementIsVisible(bannerAfterLogIn);
+        return bannerAfterLogIn.isDisplayed();
     }
 }

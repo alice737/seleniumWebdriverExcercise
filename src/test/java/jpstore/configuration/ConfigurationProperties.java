@@ -3,7 +3,6 @@ package jpstore.configuration;
 import java.util.Properties;
 
 public class ConfigurationProperties {
-    //Statyczne pole do przechowywania properties
     private static Properties properties;
 
     //Konstruktor prywatny potrzebny do posiadania tylko jednej instancji klasy ConfigurationProperties

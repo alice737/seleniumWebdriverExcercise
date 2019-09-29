@@ -1,7 +1,6 @@
 package jpstore.driver;
 
 import jpstore.browser.BrowserFactory;
-import jpstore.browser.BrowserType;
 import jpstore.configuration.LocalWebDriverProperties;
 import org.openqa.selenium.WebDriver;
 
